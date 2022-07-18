@@ -15,19 +15,12 @@ public class Painting extends JFrame {
         g.setColor(Color.BLACK);
         g.fillRect(0,0,600,600);
         g.drawImage(image, x, y, null);
-
-       if (x < 100 && y == 20) {
-        x += 10;
-       }
-       if(x == 100 && y < 100) {
-         y += 10;
-        }
-        if(y == 100 && x > 20){
-          x -= 10;
-       }
-        if(x == 20 && y > 20){
-            y -= 10;
-        }
+        x += 20;
+        y += 20;
+         if(x > 600){
+             x = 20;
+             y = 20;
+          }
     }
     Painting(){
         try {
